@@ -119,10 +119,7 @@ lugares = "Estación Oasis del Parque Metropolitano de Santiago."
 compra = "Para adquirir su ticket lo debes realizar mediante la página web de https://aventuraonline.cl/. El pago por la pagina web es realizado mediante tarjeta, ya sea de debito o crédito. Tickets de Aventura Kids sólo se venden de manera presencial."
 entrada = "Si vienes ya con tu ticket de compra online debes validarlo directamente en la caja de parque aventura, donde te entregaremos el brazalete donde te asociarán y validaran tus jugadas. recuerda llegar 10 min antes de tu horario de ingreso para poder validar tu ticket sin inconvenientes."
 # horario_regular = "Parque aventura abre sábados, domingo y festivos de 10:00 a 19:00 hrs. En temporada de invierno parque aventura opera de 10:00 a 18:15hrs. en caso de condiciones climáticas que no nos permitan operar el parque cerrará sus puertas por seguridad de los aventureros y trabajadores."
-if datetime.date.today() < datetime.date(2024,3,1):
-    horario_regular = "El horario de funcionamiento es de miércoles a viernes desde 13:45 a 20:00 hrs y días Sábado y Domingo de 10:00 a 20:00 hrs. "
-else:
-    horario_regular = "Parque Aventura atiende miércoles, jueves y viernes entre 12:00 y 19:00 hrs, y Sábado, Domingo y festivos de 10:00 a 19:00 hrs, mientras que Aventura Kids está disponible de Martes a Domingo de 10:00 a 18:45 hrs. "
+horario_regular = "Parque Aventura abre Sábado, Domingo y festivos de 10:00 a 19:00 hrs, mientras que Aventura Kids está disponible de Martes a Domingo de 10:00 a 18:45 hrs. "
 combinaciones = "con el ticket vive el parque Full Aventura, pueden acceder a los servicios de Parque Aventura, teleférico, buses ecológicos y Funicular."
 sitios_de_interes = "Jardín japonés, Jardín Mapulemu."
 servicios_cercanos = "Estacionamientos públicos en avenida el cerro con calle el rey, estos son gratuitos, solo con propina al cuidador."
@@ -131,7 +128,7 @@ condiciones = "Por la seguridad de nuestros visitantes la estatura mínima en Pa
                 "No existe el Ticket Abierto (sin fecha). La única forma de adquirir un ticket sin fecha es para grupos grandes (ventas corporativas), contactandose con Paula Ibarra: pibarra@turistik.com. "\
 "Los tickets son válidos para la fecha  y hora reservada, si la persona llega después de la hora indicada, no podrá hacer uso de su ticket. Sólo se podrá hacer una excepción, por medio de un supervisor de teleférico, dependiendo del flujo de visitantes en dicho momento."
 servicios_adicionales = "Estos son servicios adicionales, los cuales se deben agendar y son independientes del horario normal de funcionamiento:"\
-"- Para celebrar cumpleaños: contactar a mlaguna@turistik.com o al número: + +56 9 6441 3723. "\
+"- Para celebrar cumpleaños: puedes revisar nuestros paquetes en la web turistik.com,contactar a mlaguna@turistik.com o al número: + +56 9 6441 3723. "\
 "- Para eventos de empresas: contactar a pibarra@turistik.com. "\
 "- Para eventos de colegios y grupos grandes: contactar a gshinya@tursitik.com y/o educacion@turistik.com."
 servicios_no_disponibles = "salto al vacío se encuentra cerrado por mantención. Para obtener información más actualizada solicite hablar con un agente."
@@ -144,13 +141,12 @@ adicional = "En caso de venir con sus mascotas deben permanecer siempre con uste
 "En caso de querer trabajar con nosotros debes enviar correo a seleccion@turistik.com o parqueaventura@turistik.cl.\n Los cupos para compra online se van actualizando semana a semana, por lo que no es posible comprar con mucha anticipación."\
 "El ingreso con ticket está permitido entre las 10:00 hrs, hasta las 19:00 hrs como último ingreso, independiente de lo que indique el ticket reservado."
 adicional += "A continuación está la información del Summer Camp delimitado por tags XML: <\summercamp>"+txt_summer_camp+"<summercamp>"
-adicional += "\nEn Parque Aventura contamos con un beneficio para cumpleañeros: El cumpleañero debe venir con dos acompañantes que compren su ticket, y el cumpleañero entra gratis (Es decir, pagan 2 y entran 3). El beneficio es válido comprando Ticket 3 Aventuras o Parque Full Aventura, para ser utilizado una vez durante el mes del cumpleaños, presentando su carnet. "
 adicional += "\nContamos con lockers en nuestras instalaciones de parque aventura para que puedas guardar tus pertenencias mientras realizas las actividades, funciona con moneda de 100 pesos. "
 adicional += "\n Dentro del Cerro San Cristobal se encuentran las piscinas Antilén y Tupahue. A continuación se detalla su información de apertura:"
 adicional += "\nLa piscina antilén se encuentra temporalmente fuera de servicio y no estará funcionando para esta temporada de verano 2024-2025. "
 adicional += "\nLa piscina tupahue se encuentra abierta, funcionando de miércoles a domingo entre 10:30 y 17:00 hrs, con venta presencial solamente."
-adicional += """\nLa nueva atracción MiniGolf de ParqueAventura es un juego para toda la familia y tiene un costo de $6.900 por persona. Funciona de martes a domingo de 10:00 a 19:45 hrs. El ticket incluye palo y pelota. Se puede jugar desde 1 a 4 personas. El juego cuenta con 9 hoyos y no tiene un límite de tiempo. El recorrido aproximado de los 9 hoyos es de 30 minutos."""
-
+adicional += "\nMiniGolf Es un espacio de entretención ubicado a los pies del Cerro San Cristóbal. Diseñado especialmente para vivir un momento de entretención al aire libre con amigos o familia. Son 9 hoyos con diferentes niveles de dificultad y obstáculos para que niños y adultos disfruten de este panorama ,horario martes a domingo de 10:00 a 19:00. La entrada general tiene un valor de 6.900."
+adicional += "\nActualmente no existe descuento para carabieneros"
 apertura = redactar_apertura(rol)+"\n"+redactar_apertura("Kids")
 
 content = "Tu nombre es Kai, eres un asistente virtual de Turistik, asignado a responder en el chat de redes sociales de " + rol\
