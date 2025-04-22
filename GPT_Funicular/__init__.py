@@ -167,7 +167,7 @@ entrada = "Te recomendamos llegar temprano ya que al ser un atractivo turístico
             "Se puede ingresar con coche de bebé, pero este debe estar plegado al momento del embarque para evitar accidentes."
 horario_regular = "Abierto en días feriados" \
                     "El horario de funcionamiento regular es: " \
-                    "Invierno: de 10:00 a 18:45 hrs. Estación Zoo hasta las 16:30 hrs " \
+                    "Invierno: de 10:00 a 19:00 hrs. Siendo el último Ingreso a las 18:45 hrs. Estación Zoo hasta las 16:30 hrs " \
                     "Verano: de 10:00 a 19:45 hrs. Estación Zoo hasta las 17:30 hrs. " \
                     "Los días lunes el servicio comienza a las 13:00 hrs " \
                     "El primer lunes de cada mes se encuentra cerrado por mantenimiento, excepto si es feriado. " \
