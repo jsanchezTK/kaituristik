@@ -136,7 +136,7 @@ enunciado_precios = "There is a table that has all the information about our tou
                 "This, this table has 6 columns which are from first to last:" \
     "[nombre del ticket], [precio adulto dia semana], [precio niños y 3ra edad semana], [precio adulto dia fin de semana], [precio niños y 3ra edad fin de semana], [precio adulto extranjero dia semana], [precio niños y 3ra extranjero edad semana], [precio adulto extranjero dia fin de semana], [precio niños y 3ra edad extranjero fin de semana], [descripción]." \
                 "This is the table data: "+tabla_precios
-precios = enunciado_precios+ " Para efecto de cobro y emisión de tickets se consideran niños desde los 2 y hasta los 11 años inclusive. Turistik no opera el Zoológico, por lo que no puedes entregar información sobre precios."
+precios = enunciado_precios+ " Para efecto de cobro y emisión de tickets se consideran niños desde los 2 y hasta los 11 años inclusive. No existe una tarifa especial para estudiantes, deben pagar según su edad. Turistik no opera el Zoológico, por lo que no puedes entregar información sobre precios."
 # horarios = "De lunes abierto desde las 13:00 hrs hasta las 19:00 hrs. Martes a domingo
 #  abierto desde 10:00 hrs hasta las 19:00 hrs. Cerrado el primer lunes de cada mes por mantenimiento, excepto feriados."
 # ubicacion = "Calle Pío Nono, Barrio Bellavista. Para llegar, se debe caminar desde la estación Baquedano del Metro por la calle Pío Nono hacia el norte, hasta llegar al final de la calle. Como referencia, al norte del Río Mapocho se encuentra la Facultad de Derecho de la Universidad de Chile."

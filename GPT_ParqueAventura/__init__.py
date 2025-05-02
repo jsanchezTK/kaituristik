@@ -133,7 +133,7 @@ servicios_adicionales = "Estos son servicios adicionales, los cuales se deben ag
 "- Para eventos de colegios y grupos grandes: contactar a gshinya@tursitik.com y/o educacion@turistik.com."
 servicios_no_disponibles = "salto al vacío se encuentra cerrado por mantención. Para obtener información más actualizada solicite hablar con un agente."
 beneficios = "El beneficio de Senadis para personas con credencial de discapacidad no incluye acceso a Parque Aventura, este beneficio solo puede ser utilizado en Teleférico, Funicular y Buses Ecológicos."\
-                "Promoción Cuponatic Parque Aventura: Para canjear el ticket correspondiente, se debe enviar un correo a parqueaventura@turistik.com para proporcionar sus datos y agendar su cupo"
+                "No existen beneficios o descuentos especiales fuera de las promociones vigentes publicadas en la página web y redes sociales de Parque Aventura."
 emergencias = "en caso de algún incidente o información por emergencia, correo de contacto es experiencia@turistik.com."
 servicio_cliente = "En caso de algún problema o reclamo te debes contactar al correo parqueaventura@turistik.cl."
 contacto_profesional = "si deseas comunicarte para colaboraciones, publicidad, proveedor enviar correo a parqueaventura@turistik.cl."
