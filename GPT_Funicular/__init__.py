@@ -134,8 +134,9 @@ enunciado_precios = "There is a table that has all the information about our tou
                 "Each row ends with a comma and a line break after the tuple (\",\\n\")." \
                 "All the data in the table is in spanish. When you give the ticket prices, you have to point out if the price is for week day or for weekends. " \
                 "This, this table has 6 columns which are from first to last:" \
-    "[nombre del ticket], [precio adulto dia semana], [precio niños y 3ra edad semana], [precio adulto dia fin de semana], [precio niños y 3ra edad fin de semana], [precio adulto extranjero dia semana], [precio niños y 3ra extranjero edad semana], [precio adulto extranjero dia fin de semana], [precio niños y 3ra edad extranjero fin de semana], [descripción]." \
-                "This is the table data: "+tabla_precios
+                "[nombre del ticket], [precio adulto dia semana], [precio niños y 3ra edad semana], [precio adulto dia fin de semana], [precio niños y 3ra edad fin de semana], [precio adulto extranjero dia semana], [precio niños y 3ra extranjero edad semana], [precio adulto extranjero dia fin de semana], [precio niños y 3ra edad extranjero fin de semana], [descripción]." \
+                "This is the table data: "+tabla_precios+ \
+                "Vive el parque Centenario: este ticket incluye un tour guiado en Funicular sobre su historia y trayectoria a lo largo de sus 100 años + viajes ilimitados en Funicular, Teleférico y buses panorámicos por el día. El tour guiado está disponible en los siguientes bloques: 10:00, 11:00, 12:00 y 13:00."
 precios = enunciado_precios+ " Para efecto de cobro y emisión de tickets se consideran niños desde los 2 y hasta los 11 años inclusive. No existe una tarifa especial para estudiantes, deben pagar según su edad. Turistik no opera el Zoológico, por lo que no puedes entregar información sobre precios."
 # horarios = "De lunes abierto desde las 13:00 hrs hasta las 19:00 hrs. Martes a domingo
 #  abierto desde 10:00 hrs hasta las 19:00 hrs. Cerrado el primer lunes de cada mes por mantenimiento, excepto feriados."
@@ -165,13 +166,14 @@ entrada = "Te recomendamos llegar temprano ya que al ser un atractivo turístico
             "Los tickets son validados por nuestro personal antes de abordar el carro. " \
             "Esta permitido el ingreso de mascotas con su correa o caja transportadora, en caso de los perros medianos a grandes deben ingresar con bozal de seguridad. " \
             "Se puede ingresar con coche de bebé, pero este debe estar plegado al momento del embarque para evitar accidentes."
-horario_regular = "Abierto en días feriados" \
-                    "El horario de funcionamiento regular es: " \
-                    "Invierno: de 10:00 a 19:00 hrs. Siendo el último Ingreso a las 18:45 hrs. Estación Zoo hasta las 16:30 hrs " \
-                    "Verano: de 10:00 a 19:45 hrs. Estación Zoo hasta las 17:30 hrs. " \
-                    "Los días lunes el servicio comienza a las 13:00 hrs " \
-                    "El primer lunes de cada mes se encuentra cerrado por mantenimiento, excepto si es feriado. " \
-                    "Los diferentes boletos disponibles para compra también tienen horarios límite, esto para que puedas disfrutar de la experiencia completa que decidas adquirir."
+horario_regular = "Desde el martes 17 de junio hasta el domingo 13 de julio de 10:00 a 18:45, el Teleférico y el Funicular operarán de corrido (incluyendo los lunes), junto a los siguientes servicios: Cafetería Estaciones, Aventura Kids, Mini Golf" 
+                #"Abierto en días feriados" \
+                   # "El horario de funcionamiento regular es: " \
+                    #"Invierno: de 10:00 a 19:00 hrs. Siendo el último Ingreso a las 18:45 hrs. Estación Zoo hasta las 16:30 hrs " \
+                    #"Verano: de 10:00 a 19:45 hrs. Estación Zoo hasta las 17:30 hrs. " \
+                    #"Los días lunes el servicio comienza a las 13:00 hrs " \
+                    #"El primer lunes de cada mes se encuentra cerrado por mantenimiento, excepto si es feriado. " \
+                    #"Los diferentes boletos disponibles para compra también tienen horarios límite, esto para que puedas disfrutar de la experiencia completa que decidas adquirir."
 combinaciones = "En Funicular podrás adquirir boletos de Funicular, y además algunos servicios combinados con Teleférico Santiago y con los Buses Ecológicos. " \
                 "Además podrás encontrar el Infocenter Funicular donde puedes comprar paseos de la empresa Turistik. Tales como cordillera, viñedos, bus Hop on - hop off, entre otros."
 sitios_de_interes = "Cerca de Funicular Santiago puedes encontrar la casa museo de Pablo Neruda \"La Chascona\", el barrio Bellavista, Patio Bellavista, Zoológico Metropolitano, Salón Tudor, Santuario Inmaculada Concepción, entre otros."
@@ -187,7 +189,7 @@ condiciones = "Funicular Santiago, declara expresamente que no se realizarán ca
                 "No existe el Ticket Abierto (sin fecha). La única forma de adquirir un ticket sin fecha es para grupos grandes (ventas corporativas), contactandose con Paula Ibarra: pibarra@turistik.com. "\
 "Los tickets son válidos para la fecha  y hora reservada, si la persona llega después de la hora indicada, no podrá hacer uso de su ticket, sólo se podrá hacer una excepción por medio de la autorización de un supervisor, dependiendo del flujo de visitantes en dicho momento." \
 "La hora de embarque de tickets Vive el Parque es sólo para control interno. Las personas con ticket Vive el Parque pueden ingresar en cualquier horario, dentro del horario de funcionamiento regular y pueden hacerlo en cualquier servicio incluido (Funicular, Teleférico o Buses). "
-servicios_adicionales = "Ninguno"
+servicios_adicionales = "El Tour Roof & Night es un viaje en Funicular, vinos de autor, música en vivo y una postal nocturna desde la cumbre. Celebra 100 años del Funicular con una experiencia enológica y musical única en el corazón del Parque Metropolitano. Disponible todos los viernes de cada semana en 4 bloques de horarios empezando a las 19:00 hrs. Su duración es libre, pueden escoger el bloque de bajada de su preferencia siendo el último a las 22:00 hrs."
 servicios_no_disponibles = "Ninguno"
 beneficios = "Los niños menores de dos años tienen acceso liberado, y el precio de valor niño es hasta los 11 años, 11 meses y 30 días. " \
                 "Las personas mayores de 60 años también optaran a una tarifa rebajada presentando documento que acredite edad. " \
@@ -205,6 +207,7 @@ adicional += "\n Dentro del Cerro San Cristobal se encuentran las piscinas Antil
 adicional += "\nLa piscina antilén se encuentra temporalmente fuera de servicio y no estará funcionando para esta temporada de verano 2024-2025. "
 adicional += "\nLa piscina tupahue se encuentra abierta, funcionando de miércoles a domingo entre 10:30 y 17:00 hrs, con venta presencial solamente."
 adicional += "\nPara poder acceder al beneficio de guía liberado, las entradas deben ser compradas presencialmente, presentando credencial de guía turístico y debe ir acompañado de mínimo 2 visitantes. "
+adicional += "\n El Zoológico Metropolitano se encuentra cerrdo hasta nuevo aviso."
 apertura = redactar_apertura(rol)
 
 content = "Tu nombre es Kai, eres un asistente virtual de Turistik, asignado a responder en el chat de redes sociales de " + rol\
