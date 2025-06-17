@@ -109,7 +109,7 @@ reglas_kai = "1. Siempre saludar y presentarte en la primera interacción"\
 reglas_especificas = "9. Si te preguntan por tours, no respondas y sugiere ingresar a www.turistik.com para obtener más información."
 
 # Datos Generales
-comentarios = "Para consultas por reclamos y problemas, el contacto es experiencia@turistik.com. Para ventas corporativas y grupos grandes, contactar a Paula Ibarra: pibarra@turistik.com"
+comentarios = "Para consultas por reclamos y problemas con su reserva o ticket, el contacto es experiencia@turistik.com. Para ventas corporativas y grupos grandes, contactar a Paula Ibarra: pibarra@turistik.com"
 contacto = "Para consultas profesionales, colaboraciones y otros: https://turistik.com/contacto/. No existe ningún número de contacto."
 comer = "En todas las estaciones del teleférico hay locales de las cafeterías Delicatto, donde hay helados artesanales, café de grano, bebidas y más. También se puede visitar el Café Tudor, ubicado cerca de la estación cumbre de Funicular, para llegar se debe tomar el Funicular desde Estación Pío Nono y bajar en Cumbre, o para llegar desde Teleférico se puede tomar en Estación Oasis y bajar en Cumbre. Café Tudor ofrece café de grano, bebidas, pastelería, entre otros. "
 proximos_feriados = "21 de Mayo de 2023"
@@ -151,7 +151,8 @@ condiciones = "Los cupos de las cabinas son compartidos con más usuarios que co
 "no se puede fumar o beber alcohol dentro de las cabinas" \
 "personas en estado de ebriedad o bajo los efectos de estupefacientes o psicotrópicos no pueden utilizar el servicio"\
 "No existe el Ticket Abierto (sin fecha). La única forma de adquirir un ticket sin fecha es para grupos grandes (ventas corporativas), contactandose con Paula Ibarra: pibarra@turistik.com. "\
-"Los tickets son válidos para la fecha  y hora reservada, si la persona llega después de la hora indicada, no podrá hacer uso de su ticket, sólo se podrá hacer una excepción por medio de la autorización de un supervisor, dependiendo del flujo de visitantes en dicho momento."
+"Los tickets son válidos para la fecha  y hora reservada, si la persona llega después de la hora indicada, no podrá hacer uso de su ticket, sólo se podrá hacer una excepción por medio de la autorización de un supervisor, dependiendo del flujo de visitantes en dicho momento." \
+"La hora de embarque de tickets Vive el Parque es sólo para control interno. Las personas con ticket Vive el Parque pueden ingresar en cualquier horario, dentro del horario de funcionamiento regular y pueden hacerlo en cualquier servicio incluido (Funicular, Teleférico o Buses). " \
 "Se puede ingresar con coche de bebé, pero este debe estar plegado al momento del embarque para evitar accidentes."
 servicios_adicionales = "Para visitas de grupos corporativos o eventos especiales contactar a Pibarra@turistik .com"\
 "Visitas de grupos en situación de vulnerabilidad contactar a info@parquemet.cl"\
@@ -286,7 +287,7 @@ def generar_respuesta(msg: str, userid: str, lang: str, canal: str, intencion: s
             messages.append({"role": i[0], "content": i[1]})
         txt = msg
         if "hola" not in txt.lower() and "gracias" not in txt.lower() and len(txt)>5:
-            txt = "Responde amable, brevemente y en el mismo idioma al siguiente texto: \""+txt+"\""
+            txt = f"Reply kindly and in {lang} to the message in quotes: \"{txt}\""
         messages.append({"role": "user", "content": txt})
         # Generar respuesta y contar tokens
         completion = client.chat.completions.create(

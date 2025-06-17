@@ -261,7 +261,7 @@ def generar_respuesta(msg: str, userid: str, lang: str, canal: str, intencion: s
             messages.append({"role": i[0], "content": i[1]})
         txt = msg
         if "hola" not in txt.lower() and "gracias" not in txt.lower() and len(txt)>5:
-            txt = "Responde amable, brevemente y en el mismo idioma al siguiente texto: \""+txt+"\""
+            txt = f"Reply kindly and in {lang} to the message in quotes: \"{txt}\""
         messages.append({"role": "user", "content": txt})
         # Generar respuesta y contar tokens
         completion = client.chat.completions.create(
